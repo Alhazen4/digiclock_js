@@ -14,6 +14,20 @@ body
     align-items: center;
 }
 
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title>h3
+{
+    color: white;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
 .clock_body
 {
     background-color: beige;
@@ -24,13 +38,7 @@ body
     align-items: center;
 }
 
-ul
-{
-    list-style: none;
-    
-}
-
-.hours, .separt, .minutes, .seconds
+.hours, .minutes, .seconds
 {
     float: left;
 }
@@ -45,13 +53,8 @@ ul
     background-color: bisque;
     font-size: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-.date_body>ul>li
-{
-    padding: 20px;
 }
 
 .credit
@@ -60,11 +63,10 @@ ul
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blanchedalmond;
 }
 
-#id
+.credit>a
 {
-    background-color: blue;
-    color: wheat;
+    margin-top: 100px;
+    background-color: aqua;
 }

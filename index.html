@@ -3,60 +3,32 @@
 <head>
     <title>Digital Clock JS</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
 <body>
-
-    <div id="test"></div>
-    
     <div class="app_body">
-        <div class="clock_body">
-            <ul>
-                <li id="hours"></li>
-                <li class="separt">:</li>
-                <li class="minutes">00</li>
-                <li class="separt">:</li>
-                <li class="seconds">00</li>
-            </ul>
+        <div class="title">
+            <h3>Digital Clock JS</h3>
         </div>
+
+        <div class="clock_body">
+            <div id="hours"></div>
+            <div>:</div>
+            <div id="minutes"></div>
+            <div>:</div>
+            <div id="seconds"></div>
+        </div>
+
         <div class="date_body">
-            <ul>
-                <li class="day">Monday</li>
-                <li class="month">May</li>
-                <li class="date">24</li>
-                <li class="year">2022</li>
-            </ul>
+            <div id="day">D</div>
+            <div id="month">M</div>
+            <div id="date">d</div>
+            <div id="year">Y</div>
         </div>
         
-        <div class="id">
-            Created by Alhazen4
+        <div class="credit">
+            <a href="/">Created by Alhazen4</a>
         </div>
     </div>
-
-
 </body>
-
-<script>
-    document.getElementById('id').innerHTML = "00";
-    function timeFunc() {
-    
-    const time = new Date();
-    
-    document.getElementById('test').innerHTML = "00";
-    var m = document.getElementsByClassName("minutes");
-    var s = document.getElementsByClassName("seconds");
-
-    h = time.getHours();
-    m = time.getMinutes();
-    s = time.getSeconds();
-
-
-
-    m = checkTime(m);
-    s = checkTime(s);    
-
-    setTimeout(timeFunc, 1000);
-}
-
-</script>
+<script src="index.js"></script>
 </html>
