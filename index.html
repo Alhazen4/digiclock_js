@@ -6,11 +6,13 @@
     <script src="index.js"></script>
 </head>
 <body>
+
+    <div id="test"></div>
     
     <div class="app_body">
         <div class="clock_body">
             <ul>
-                <li class="hours"></li>
+                <li id="hours"></li>
                 <li class="separt">:</li>
                 <li class="minutes">00</li>
                 <li class="separt">:</li>
@@ -26,11 +28,35 @@
             </ul>
         </div>
         
-        <div class="credit">
-            <a href="/">Created by Alhazen4</a>
+        <div class="id">
+            Created by Alhazen4
         </div>
     </div>
 
 
 </body>
+
+<script>
+    document.getElementById('id').innerHTML = "00";
+    function timeFunc() {
+    
+    const time = new Date();
+    
+    document.getElementById('test').innerHTML = "00";
+    var m = document.getElementsByClassName("minutes");
+    var s = document.getElementsByClassName("seconds");
+
+    h = time.getHours();
+    m = time.getMinutes();
+    s = time.getSeconds();
+
+
+
+    m = checkTime(m);
+    s = checkTime(s);    
+
+    setTimeout(timeFunc, 1000);
+}
+
+</script>
 </html>
