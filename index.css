@@ -1,7 +1,14 @@
+
+@font-face {
+    font-family: 'DSDigital';
+    src: url('src/DS-DIGI.TTF');
+}
+
 *
 {
     padding: 0;
     margin: 0;
+    font-family: 'DSDigital';
 }
 
 body
@@ -30,7 +37,7 @@ body
 
 .clock_body
 {
-    background-color: beige;
+    color: white;
     padding: 0;
     font-size: 200px;
     display: flex;
@@ -50,8 +57,9 @@ body
 
 .date_body
 {
-    background-color: bisque;
-    font-size: 100px;
+    color: black    ;
+    background-color: white;
+    font-size: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -67,6 +75,14 @@ body
 
 .credit>a
 {
+    text-decoration: none;
+    padding: 10px;
     margin-top: 100px;
-    background-color: aqua;
+    background-color: grey;
+    color: black;
+}
+
+.credit>a:hover
+{
+    background-color: white;
 }
